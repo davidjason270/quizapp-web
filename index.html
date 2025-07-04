@@ -40,21 +40,81 @@
         </style>
    </head> 
    <body>
-        <small>Create by ICT Department</small>
-        <h1>Hey, Try Out This Quiz💝</h1>
+        <small>Created by ICT Department</small>
+        <h1 id="mainTitle">Hey, Try Out This Quiz💝</h1>
         <i>Cool App Over here</i>
 
         <!-- Quiz form goes here👇-->
          <form action="">
-            <p>1. What program are you doing ?</p>
-            A. <input type="checkbox">Data Science <br>
-            B. <input type="checkbox">Cyber Security <br>
-            C. <input type="checkbox">ISBA <br>
-            D. <input type="checkbox">Animal Science <br>
+            <p id="questionElement">1. What program are you doing ?</p>
+            A. <input class="option" type="checkbox">Data Science <br>
+            B. <input class="option" type="checkbox">Cyber Security <br>
+            C. <input class="option" type="checkbox">ISBA <br>
+            D. <input class="option" type="checkbox">Animal Science <br>
+               <input type="text">
             <button>Submit</button>
          </form>
 
         <!-- Javascript goes here👇-->
-        <script></script>
+        <script>
+
+         let quiz = [
+         {
+            question: "What is the capital of France?",
+            options: ["Berlin", "Paris", "Madrid", "Rome"],
+            answer: "Paris"
+         },
+         {
+            question: "Which language runs in a web browser?",
+            options: ["Python", "C", "Java", "JavaScript"],
+            answer: "JavaScript"
+         },
+         {
+            question: "Who wrote 'Hamlet'?",
+            options: ["Charles Dickens", "William Shakespeare", "Mark Twain", "Leo Tolstoy"],
+            answer: "William Shakespeare"
+         },
+         {
+            question: "What is the largest planet in our solar system?",
+            options: ["Earth", "Jupiter", "Mars", "Venus"],
+            answer: "Jupiter"
+         },
+         {
+            question: "What does CSS stand for?",
+            options: ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+            answer: "Cascading Style Sheets"
+         },
+         {
+            question: "Which year did World War II end?",
+            options: ["1945", "1939", "1918", "1965"],
+            answer: "1945"
+         },
+         {
+            question: "What is the boiling point of water at sea level?",
+            options: ["90°C", "100°C", "110°C", "120°C"],
+            answer: "100°C"
+         },
+         {
+            question: "Which element has the chemical symbol O?",
+            options: ["Gold", "Oxygen", "Iron", "Silver"],
+            answer: "Oxygen"
+         },
+         {
+            question: "What is the square root of 64?",
+            options: ["6", "7", "8", "9"],
+            answer: "8"
+         },
+         {
+            question: "Which continent is known as the Dark Continent?",
+            options: ["Asia", "Africa", "Europe", "Australia"],
+            answer: "Africa"
+         }
+         ];
+
+         let questionElement = document.getElementById("questionElement");
+         questionElement.innerText = quiz[0].question;
+
+
+        </script>
    </body>
 </html>
